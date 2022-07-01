@@ -3,11 +3,11 @@ const axios = require("axios").default;
 const bodyParser = require("body-parser");
 
 const receiver = new ExpressReceiver({
-  signingSecret: "91780bdbd84ea30ce08639d76006109e"
+  signingSecret: "your_Signing_secret"
 });
 
 const app = new App({
-  token: "xoxb-4708139310-3753165626993-TNoxGsR6fe9e1mOmV52xoItX",
+  token: "your_Bot_Token",
   receiver: receiver
 });
 
