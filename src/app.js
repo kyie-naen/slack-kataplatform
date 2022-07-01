@@ -33,7 +33,7 @@ receiver.app.post("/bot", (req, res) => {
         {
           headers: {
             Authorization:
-              "Bearer xoxb-4708139310-3753165626993-TNoxGsR6fe9e1mOmV52xoItX",
+              "Bearer your_Bot_Token",
             "Content-Type": "application/json"
           }
         }
@@ -53,7 +53,7 @@ app.event("message", ({ event }) => {
   console.log(event);
   axios
     .post(
-      "https://kanal.kata.ai/receive_message/186bc686-b1f2-41cd-bee9-248c5f6a1df8",
+      "https://kanal.kata.ai/receive_message/endpoint",
       {
         userId: event.channel,
         messages: [
